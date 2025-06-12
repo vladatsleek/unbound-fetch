@@ -1,0 +1,13 @@
+name = "unbound-fetch"
+main = "src/index.ts"
+compatibility_date = "2025-05-25"
+
+durable_objects.bindings = [
+  { name = "UnboundFetch", class_name = "UnboundFetch" }
+]
+
+migrations = [
+  { tag = "v1", new_classes = [ "UnboundFetch" ] }
+]
+      
+      

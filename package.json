@@ -1,0 +1,34 @@
+{
+  "name": "unbound-fetch",
+  "version": "1.0.6",
+  "description": "> 1000 subrequests for cloudflare workers",
+  "main": "dist/unbound-fetch.cjs",
+  "type": "module",
+  "types": "dist/unbound-fetch.d.ts",
+  "source": "src/unbound-fetch.ts",
+  "exports": {
+    "require": "./dist/unbound-fetch.cjs",
+    "default": "./dist/unbound-fetch.modern.js"
+  },
+  "unpkg": "./dist/unbound-fetch.umd.js",
+  "scripts": {
+    "build": "microbundle src/unbound-fetch.ts -o dist",
+    "dev": "wrangler dev"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "subrequests"
+  ],
+  "author": "Vladimir Popov <rusintez@gmail.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.8.1",
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20250607.0",
+    "unbound-fetch": "link:"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.1",
+    "wrangler": "^4.19.1"
+  }
+}
