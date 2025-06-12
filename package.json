@@ -1,6 +1,6 @@
 {
   "name": "unbound-fetch",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "> 1000 subrequests for cloudflare workers",
   "main": "dist/unbound-fetch.cjs",
   "type": "module",
@@ -28,8 +28,7 @@
   "license": "MIT",
   "packageManager": "pnpm@10.8.1",
   "dependencies": {
-    "@cloudflare/workers-types": "^4.20250607.0",
-    "unbound-fetch": "link:"
+    "@cloudflare/workers-types": "^4.20250607.0"
   },
   "devDependencies": {
     "microbundle": "^0.15.1",

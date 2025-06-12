@@ -4,9 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  unbound-fetch: 'link:'
-
 importers:
 
   .:
@@ -14,9 +11,6 @@ importers:
       '@cloudflare/workers-types':
         specifier: ^4.20250607.0
         version: 4.20250607.0
-      unbound-fetch:
-        specifier: 'link:'
-        version: 'link:'
     devDependencies:
       microbundle:
         specifier: ^0.15.1
